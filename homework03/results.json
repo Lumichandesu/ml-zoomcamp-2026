@@ -1,0 +1,66 @@
+{
+  "assistance": "AI-assisted draft; calculated results require human review; no submission",
+  "dataset_sha256": "89ac855c73e2819705eda43c016f3e04bafec320acb773ba190843797a8c121c",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "sklearn": "1.7.2"
+  },
+  "rows": 5000,
+  "feature_columns": [
+    "lead_source",
+    "industry",
+    "employment_status",
+    "location",
+    "annual_income",
+    "number_of_courses_viewed",
+    "interaction_count",
+    "lead_score"
+  ],
+  "missing_before": {
+    "lead_source": 148,
+    "industry": 240,
+    "employment_status": 194,
+    "location": 208,
+    "annual_income": 369,
+    "number_of_courses_viewed": 0,
+    "interaction_count": 0,
+    "lead_score": 35
+  },
+  "split_sizes": {
+    "train": 3000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "q1_industry_modes": [
+    "technology"
+  ],
+  "q2_candidate_correlations": {
+    "interaction_count / lead_score": 0.9157457980418667,
+    "number_of_courses_viewed / lead_score": 0.7572042392104888,
+    "number_of_courses_viewed / interaction_count": 0.7216090038937004,
+    "annual_income / interaction_count": 0.12284235135955936
+  },
+  "q2_max_correlation_pair": "interaction_count / lead_score",
+  "q3_training_mutual_information_rounded_2": {
+    "industry": 0.0,
+    "location": 0.0,
+    "lead_source": 0.03,
+    "employment_status": 0.02
+  },
+  "q4_validation_accuracy_unrounded": 0.645,
+  "q4_validation_accuracy_rounded_2": 0.65,
+  "q5_signed_accuracy_differences": {
+    "lead_source": 0.0030000000000000027,
+    "number_of_courses_viewed": 0.0020000000000000018,
+    "interaction_count": 0.04400000000000004
+  },
+  "q5_smallest_difference_feature": "number_of_courses_viewed",
+  "q6_accuracy_rounded_3_by_C": {
+    "1e-06": 0.598,
+    "1e-05": 0.598,
+    "0.0001": 0.613,
+    "0.001": 0.645
+  },
+  "q6_best_C_smallest_on_tie": 0.001
+}
