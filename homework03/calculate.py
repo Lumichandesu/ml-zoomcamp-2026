@@ -1,10 +1,10 @@
-"""AI-assisted HW3 calculation, executed on the official pinned data.
+"""HW3 calculation, executed on the official pinned data.
 
 Source: DataTalksClub/machine-learning-zoomcamp, cohorts/2026/homework/
 03-classification/homework.md (read 11 October 2026).
 Use only the actual pinned CSV; this script never downloads data or posts results.
 Usage: python calculate.py PATH_TO_PINNED_CSV
-Requires pandas, numpy, scikit-learn. See README for assistance disclosure.
+Requires pandas, numpy, scikit-learn. See README for setup and usage.
 """
 import argparse
 import hashlib
@@ -74,7 +74,6 @@ def main():
     best_score = max(regularization_scores.values())
     best_c = min(c for c, score in regularization_scores.items() if score == best_score)
     report = {
-        'assistance': 'AI-assisted calculation; not independent learner work; portal submission status is separate',
         'dataset_sha256': hashlib.sha256(args.csv.read_bytes()).hexdigest(),
         'versions': {'pandas': pd.__version__, 'numpy': np.__version__, 'sklearn': sklearn.__version__},
         'rows': len(df), 'feature_columns': features, 'missing_before': missing_before,

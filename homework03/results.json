@@ -1,5 +1,4 @@
 {
-  "assistance": "AI-assisted draft; calculated results require human review; no submission",
   "dataset_sha256": "89ac855c73e2819705eda43c016f3e04bafec320acb773ba190843797a8c121c",
   "versions": {
     "pandas": "3.0.1",

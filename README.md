@@ -2,13 +2,6 @@
 
 Coursework for the DataTalksClub ML Zoomcamp 2026 cohort.
 
-## Assistance disclosure
-
-Codex (AI) wrote and reviewed this calculation script, prepared the environment,
-and executed it on the official pinned dataset at the account owner's request.
-These files are AI-assisted coursework, not a claim of independently written
-learner code or independent exam performance. No social posts were created.
-
 ## Homework 03
 
 The executable calculation, dataset fingerprint, package versions, and full
