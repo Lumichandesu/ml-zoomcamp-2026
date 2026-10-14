@@ -1,0 +1,138 @@
+{
+  "assignment": "ML Zoomcamp 2026 Homework 4: Evaluation Metrics for Classification",
+  "data_source": "DataTalksClub/machine-learning-zoomcamp/cohorts/2026/data/course_lead_scoring_2026.csv",
+  "dataset_sha256": "2d9da196bdefd2a45aa0a17ca21c19f06a5d9d56af628be1f04bbb3531cc12e9",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.7.2"
+  },
+  "rows": 5000,
+  "missing_values_before_imputation": {
+    "lead_source": 148,
+    "industry": 240,
+    "employment_status": 194,
+    "location": 208,
+    "annual_income": 369,
+    "number_of_courses_viewed": 0,
+    "interaction_count": 0,
+    "lead_score": 35
+  },
+  "feature_columns": [
+    "lead_source",
+    "industry",
+    "employment_status",
+    "location",
+    "annual_income",
+    "number_of_courses_viewed",
+    "interaction_count",
+    "lead_score"
+  ],
+  "split_sizes": {
+    "train": 3000,
+    "validation": 1000,
+    "test_held_out_unused": 1000,
+    "full_train_for_cv": 4000,
+    "each_cv_fold_train": 3200,
+    "each_cv_fold_validation": 800
+  },
+  "Q1_directed_training_roc_auc_by_numeric_feature": {
+    "lead_score": {
+      "raw_auc": 0.7882254810906102,
+      "direction_inverted": false,
+      "directed_auc": 0.7882254810906102
+    },
+    "number_of_courses_viewed": {
+      "raw_auc": 0.7229894623989618,
+      "direction_inverted": false,
+      "directed_auc": 0.7229894623989618
+    },
+    "interaction_count": {
+      "raw_auc": 0.7649203047563227,
+      "direction_inverted": false,
+      "directed_auc": 0.7649203047563227
+    },
+    "annual_income": {
+      "raw_auc": 0.6081977776250831,
+      "direction_inverted": false,
+      "directed_auc": 0.6081977776250831
+    }
+  },
+  "Q1_highest_feature": "lead_score",
+  "Q2_validation_roc_auc": 0.7318222288173319,
+  "Q2_validation_roc_auc_rounded_3": 0.732,
+  "Q3_precision_recall_smallest_gap": {
+    "minimum_absolute_difference": 0.007502647993409384,
+    "closest_thresholds": [
+      0.63
+    ],
+    "selected_threshold_for_single_answer": 0.63
+  },
+  "Q4_max_f1": {
+    "maximum_f1": 0.7576158940397351,
+    "thresholds_with_maximum_f1": [
+      0.41
+    ],
+    "selected_threshold_for_single_answer": 0.41
+  },
+  "Q5_5_fold_auc_C_1": {
+    "fold_auc": [
+      0.7305601027122453,
+      0.7295726148196622,
+      0.7363428071259397,
+      0.7412454717957564,
+      0.7209138590326581
+    ],
+    "population_std": 0.006853233151022138,
+    "population_std_rounded_3": 0.007
+  },
+  "Q6_auc_by_C": {
+    "1e-06": {
+      "fold_auc": [
+        0.5941004654148612,
+        0.6402137243565715,
+        0.6001570384100505,
+        0.6364466933726896,
+        0.6127532038032245
+      ],
+      "mean_auc": 0.6167342250714795,
+      "population_std": 0.018669799234831475,
+      "mean_auc_rounded_3": 0.617,
+      "std_rounded_3": 0.019
+    },
+    "0.001": {
+      "fold_auc": [
+        0.7504349221633766,
+        0.7475333388395098,
+        0.7583539285346514,
+        0.7584127166669861,
+        0.7311259818106656
+      ],
+      "mean_auc": 0.7491721776030379,
+      "population_std": 0.009996375455700753,
+      "mean_auc_rounded_3": 0.749,
+      "std_rounded_3": 0.01
+    },
+    "1": {
+      "fold_auc": [
+        0.7305601027122453,
+        0.7295726148196622,
+        0.7363428071259397,
+        0.7412454717957564,
+        0.7209138590326581
+      ],
+      "mean_auc": 0.7317269710972524,
+      "population_std": 0.006853233151022138,
+      "mean_auc_rounded_3": 0.732,
+      "std_rounded_3": 0.007
+    }
+  },
+  "Q6_best_C_options_by_exact_mean": [
+    0.001
+  ],
+  "threshold_grid": "0.00 through 1.00 inclusive, step 0.01",
+  "notes": [
+    "The held-out test split was created as instructed but not used for model selection or answers.",
+    "CV uses df_full_train, KFold(n_splits=5, shuffle=True, random_state=1), and population standard deviation."
+  ]
+}

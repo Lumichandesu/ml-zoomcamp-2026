@@ -25,3 +25,20 @@ rules, signed feature-removal differences, and rounded regularization tie-break.
 
 The submission status is recorded by the course portal, separately from this
 reproducible calculation. No course certificate is claimed by this repository.
+
+## Homework 04
+
+The executable calculation, dataset fingerprint, package versions, precision/recall plot, and numerical results are in [homework04](homework04/).
+
+Specification: https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/04-evaluation/homework.md
+
+Dataset: https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/course_lead_scoring_2026.csv
+
+The CSV is not redistributed here. Download the official dataset separately and run:
+
+```sh
+python -m pip install -r homework04/requirements.txt
+python homework04/calculate.py /path/to/course_lead_scoring_2026.csv
+```
+
+The script follows the assignment's preprocessing, exact splits, model settings, thresholds, and five-fold cross-validation. The held-out test split is kept out of answer calculation and model selection.
