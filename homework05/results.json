@@ -1,0 +1,39 @@
+{
+  "dataset_sha256_from_metadata": "2d9da196bdefd2a45aa0a17ca21c19f06a5d9d56af628be1f04bbb3531cc12e9",
+  "docker_python_base_tag": "python:3.11.15-slim-bookworm",
+  "feature_defaults_sha256": "1694f842b908fac9f53c0cc19be6d91f934befc63af23cc32fefafde69acd0cd",
+  "official_source_subdirectory": "cohorts/2026/homework/05-deployment",
+  "pipeline_sha256": "1646bbdcd38d4f044da6b630c5b332c93a314245a8c21929011c42de51f629f1",
+  "python": "3.11.15",
+  "q3_answer_3dp": "0.533",
+  "q3_probability": 0.5329944186432507,
+  "q4_answer_3dp": "0.770",
+  "q4_api": {
+    "base_url": "http://localhost:9696",
+    "health": {
+      "feature_defaults_sha256": "1694f842b908fac9f53c0cc19be6d91f934befc63af23cc32fefafde69acd0cd",
+      "model_sha256": "1646bbdcd38d4f044da6b630c5b332c93a314245a8c21929011c42de51f629f1",
+      "status": "ok"
+    },
+    "prediction": {
+      "conversion": true,
+      "conversion_probability": 0.769799
+    }
+  },
+  "q6_answer_3dp": "0.770",
+  "q6_container": {
+    "base_url": "http://localhost:9697",
+    "health": {
+      "feature_defaults_sha256": "1694f842b908fac9f53c0cc19be6d91f934befc63af23cc32fefafde69acd0cd",
+      "model_sha256": "1646bbdcd38d4f044da6b630c5b332c93a314245a8c21929011c42de51f629f1",
+      "status": "ok"
+    },
+    "prediction": {
+      "conversion": true,
+      "conversion_probability": 0.769799
+    }
+  },
+  "scikit_learn": "1.7.2",
+  "source_commit": "5356b3b16e5c87f8f9fe0c3f8fdb2183d34b18fb",
+  "uv": "uv 0.12.7 (61291a8ca 2026-08-27 x86_64-pc-windows-msvc)"
+}

@@ -42,3 +42,9 @@ python homework04/calculate.py /path/to/course_lead_scoring_2026.csv
 ```
 
 The script follows the assignment's preprocessing, exact splits, model settings, thresholds, and five-fold cross-validation. The held-out test split is kept out of answer calculation and model selection.
+
+## Homework 05
+
+The original verifier, checked answers, and local API/container test evidence are in [homework05](homework05/). It verifies the frozen 2026 model checksum before unpickling and uses the official locked environment. The official artifact and source files are referenced by a pinned commit rather than redistributed here.
+
+Specification: https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/05-deployment/homework.md
